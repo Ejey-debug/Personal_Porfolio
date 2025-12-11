@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold">Hi, I'm <span class="accent">Emelio M. Bumagat Jr.</span></h1>
+            <p class="lead">Aspiring Web Developer • Frontend &amp; UI-focused • Building responsive experiences</p>
+            <p>
+              <a href="#projects" class="btn btn-primary btn-lg me-2">View My Work</a>
+              <a href="#contact" class="btn btn-outline-secondary btn-lg">Contact Me</a>
+            </p>
+          </div>
+          <div class="col-lg-6 text-center">
+            <!-- Placeholder profile image; replace with your own -->
+            <img src="images/portfolio.jpg" alt="Profile photo" class="rounded-circle profile-photo img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <header class="mb-4">
+          <h2>About Me</h2>
+        </header>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img src="images/portfolio.jpg" alt="Profile" class="img-fluid rounded mb-3">
+          </div>
+          <div class="col-md-8">
+            <article>
+              <p>Hello! I'm <strong>Emelio</strong>, a student at Universidad de Dagupan studying Multimedia Systems and Web-Based Programming. I enjoy building clean, accessible websites using modern HTML, CSS, and JavaScript. I focus on responsive layouts, accessible semantics, and creating tidy, maintainable code.</p>
+              <p>Completed projects include class assignments and personal experiments: small web apps, responsive landing pages, and interactive UI components. I'm actively learning backend fundamentals and version control with Git &amp; GitHub.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+      <div class="container">
+        <header class="mb-4">
+          <h2>Skills</h2>
+          <p class="text-muted">Technical skills and tools I use</p>
+        </header>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="skill-card p-3 h-100">
+              <h3 class="h5">Frontend</h3>
+              <!-- Accessible progress bars -->
+              <div class="mb-2">
+                <label class="form-label">HTML5</label>
+                <div class="progress" role="progressbar" aria-label="HTML skill level" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 85%">85%</div>
+                </div>
+              </div>
+              <div class="mb-2">
+                <label class="form-label">CSS3</label>
+                <div class="progress" role="progressbar" aria-label="CSS skill level" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 80%">80%</div>
+                </div>
+              </div>
+              <div class="mb-2">
+                <label class="form-label">JavaScript</label>
+                <div class="progress" role="progressbar" aria-label="JavaScript skill level" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 70%">70%</div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="skill-card p-3 h-100">
+              <h3 class="h5">Tools &amp; Others</h3>
+              <ul class="list-unstyled">
+                <li>Git &amp; GitHub</li>
+                <li>Bootstrap 5 / Tailwind (familiarity)</li>
+                <li>Figma (basic UI design)</li>
+                <li>VS Code</li>
+                <li>Formspree (for contact forms)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Gallery -->
+    <section id="projects" class="py-5 bg-light">
+      <div class="container">
+        <header class="mb-4">
+          <h2>Projects</h2>
+          <p class="text-muted">Selected class assignments and personal projects</p>
+        </header>
+
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <article class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/booking.png" class="card-img-top" alt="Project 1 screenshot">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Sohu Beach Club</h5>
+                <p class="card-text">A responsive landing page built using HTML5 and Bootstrap. Implements responsive nav, hero, and contact form.</p>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-outline-primary btn-sm me-2">View Live</a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">View Code</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/calcu.png" class="card-img-top" alt="Project 2 screenshot">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Calculator</h5>
+                <p class="card-text">A small interactive JavaScript app (to-do list) demonstrating DOM manipulation and localStorage persistence.</p>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-outline-primary btn-sm me-2">View Live</a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">View Code</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/website.png" class="card-img-top" alt="Project 3 screenshot">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Project Three</h5>
+                <p class="card-text">A mock booking system UI created for a class assignment using CSS Grid and responsive techniques.</p>
+                <div class="mt-auto">
+                  <a href="#" class="btn btn-outline-primary btn-sm me-2">View Live</a>
+                  <a href="#" class="btn btn-outline-secondary btn-sm">View Code</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <header class="mb-4">
+          <h2>Contact</h2>
+          <p class="text-muted">Get in touch — form below uses Formspree</p>
+        </header>
+
+        <div class="row">
+          <div class="col-md-6">
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+
+          <aside class="col-md-6">
+            <h3 class="h5">Other ways to reach me</h3>
+            <ul class="list-unstyled">
+              <li>GitHub: <a href="#">https://github.com/Ejey-debug</a></li>
+              <li>LinkedIn: <a href="#">linkedin.com/in/your-profile</a></li>
+              <li>Email: <a href="mailto:ejeybumagat5@gmail.com">ejeybumagat5@gmail.com</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <small>© <span id="year"></span> Emelio Bumagat — Universidad de Dagupan</small>
+      <nav>
+        <a href="#" class="text-white text-decoration-none me-3">Privacy</a>
+        <a href="#" class="text-white text-decoration-none">Credits</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS bundle (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Simple script for dynamic year and smooth scroll for internal links
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll for same-page navigation (progressive enhancement)
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId.length > 1) {
+          e.preventDefault();
+          document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+
